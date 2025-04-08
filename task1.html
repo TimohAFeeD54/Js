@@ -8,7 +8,7 @@
 <body>
     <script>
         let a, b, x
-        a = parseFloat(prompt("Введите число а"))
+        a = parseFloat(prompt("Введите число а для решения уравнения вида ax + b = 0"))
         b = parseFloat(prompt("Введите чиcло b"))
         x = -b/a
 
@@ -19,16 +19,18 @@
         n = parseInt(prompt("Введите число секунд"))
         hour = Math.floor(n/3600)
 
-        alert(hour)
+        alert( "Полных часов прошло:"+ hour)
 
-        let num, d1,d2,d3
+        let num, d1,d2,d3, newnum
         num = parseInt(prompt("Введите 3-х значное число"))
         d1 = num%10
         d2 = Math.floor(num / 10)%10
         d3 = Math.floor(num / 100)%10
+        newnum = d1*100 + d3*10 + d2
 
-        alert("Ответ в консоли")
-        console.log(d1,d3,d2)
+
+        alert(newnum)
+
     </script>
 </body>
 </html>
